@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan Manuel Jaramillo Henao</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
-    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)" >
-</head>
-<body>
-    
-   <header>
-    <Nav>
-        <a href="#home">ACERCA DE MI</a>
-        <a href="#portfolio">PORTAFOLIO INTERACTIVO</a>
-        <a href="#projects">PROYECTOS</a>
-        <a href="#skills">HABILIDADES</a>
-        <a href="#contact">CONTACTO</a>
-        
-    </Nav>
-   </header>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="./tablet.css"
+      media="screen and (min-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./desktop.css"
+      media="screen and (min-width: 800px)"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input id="nav-toggle" type="checkbox" />
+        <a class="logo" href="#home">Juan<strong>dev</strong> </a>
+        <ul class="links">
+          <li><a onclick="closeCheckBox()" href="#home">ACERCA DE MI</a></li>
+          <li>
+            <a onclick="closeCheckBox()" href="#portfolio"
+              >PORTAFOLIO INTERACTIVO</a
+            >
+          </li>
+          <li><a onclick="closeCheckBox()" href="#projects">PROYECTOS</a></li>
+          <li><a onclick="closeCheckBox()" href="#skills">HABILIDADES</a></li>
+          <li><a onclick="closeCheckBox()" href="#contact">CONTACTO</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    </header>
     <section id="home">
-        <h1>Pagina Principal</h1>
+      <h1>Pagina Principal</h1>
+   
     </section>
     <section id="portfolio">
-        <h1>PORTAFOLIO INTERACTIVO</h1>
+      
+      <h1>PORTAFOLIO INTERACTIVO</h1>
     </section>
     <section id="projects">
-        <h1>PROYECTOS</h1>
+      <h1>PROYECTOS</h1>
     </section>
     <section id="skills">
-       <h1>HABILIDADES</h1>
+      <h1>HABILIDADES</h1>
     </section>
     <footer id="contact">
-        <h1>Footer</h1>
+      <h1>Footer</h1>
     </footer>
-</body>
+    <script src="./scripts.js"></script>
+  </body>
 </html>
